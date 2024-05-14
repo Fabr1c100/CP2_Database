@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EBA479B-54E4-3056-7FC5-F0E7FA763AE4" name="Estudio">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>F759F57E-F380-8FA2-8261-7102554A7CFC</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESTUDIO_ID" id="19514337-65B9-7366-1741-67BB0A152FC4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade estudio]]></commentInRDBMS>
+<generatorID>BF907963-FE87-4E3C-B4FE-1AA34A8736C8</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTUDIO_NM" id="B4C3D2BB-661C-59DF-57DC-3F65049EEAC4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do estudio cadastrado]]></commentInRDBMS>
+<generatorID>29DE3077-494B-C0D6-A9DA-32B9C08A3047</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5B23385-9D7B-E60D-2260-DD60CEE241B1" name="Estudio_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>6328E5D1-590E-BDFE-87D4-0DDCFC37441C</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19514337-65B9-7366-1741-67BB0A152FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

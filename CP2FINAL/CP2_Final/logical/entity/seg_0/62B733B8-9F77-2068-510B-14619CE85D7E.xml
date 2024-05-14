@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62B733B8-9F77-2068-510B-14619CE85D7E" name="Filme">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:33:28 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="FILME_ID" id="9CBC28B5-5DFC-0A64-A053-6E918F9E4354">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:33:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador pincipal da entidade filme]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TITULO_NM" id="CE305F39-42D6-49B6-D3FF-9EACE984E2DA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:33:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Titulo do filme cadastrado]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LANCAMENTO_DT" id="A8939003-76BF-A292-B5AA-B9E8393A4957">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:33:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de lançamento do filme cadastrado]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0A4315A3-E8BE-312E-F81E-76AFDE15F02B" name="Filme PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:35:19 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CBC28B5-5DFC-0A64-A053-6E918F9E4354</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

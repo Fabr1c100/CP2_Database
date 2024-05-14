@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA194DBE-CA57-34F9-03E7-6E19F162EBD0" name="Exemplar">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:24:53 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorColumnName>TIPO_EXEMPLAR</discriminatorColumnName>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EXEMPLAR_ID" id="DB5B22CF-A6A0-2BD0-5EBA-3AACD9DF9CF5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:25:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade exemplar]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISPONIBILIDADE_ST" id="3AD93472-F1AA-536D-9DB1-A9198628B211">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:27:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para identificar se o exemplar cadastrado esta disponível para aluguel]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXEMPLAR_ID1" id="EE73DD2E-DA77-C175-7318-E4B1D1EEBACF">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-10 00:01:15 UTC</createdTime>
+<generatorID>86B1BAF1-ACB1-1123-F5C9-388F54EE1552</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<referedAttribute>DB5B22CF-A6A0-2BD0-5EBA-3AACD9DF9CF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E1C78A2-396A-4485-D4F3-E51B43F47D5B" name="Exemplar PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:27:16 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB5B22CF-A6A0-2BD0-5EBA-3AACD9DF9CF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

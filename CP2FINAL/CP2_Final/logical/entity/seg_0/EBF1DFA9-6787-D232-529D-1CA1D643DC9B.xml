@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBF1DFA9-6787-D232-529D-1CA1D643DC9B" name="Genero">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:47:09 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GENERO_ID" id="75AB709F-9470-52A7-D04F-03DB72ACEFE3">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:47:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade genero]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENERO_NM" id="D3E7FEBE-7602-2F1A-10B9-8C5C57CAE289">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:49:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da classificação de genero cadastrada]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EE9D9CB9-5237-EAC1-368F-CAEB9572CF25" name="Genero PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:47:36 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>75AB709F-9470-52A7-D04F-03DB72ACEFE3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

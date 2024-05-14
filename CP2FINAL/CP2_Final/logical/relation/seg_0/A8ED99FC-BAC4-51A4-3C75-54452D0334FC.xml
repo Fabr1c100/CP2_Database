@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Avalia" directorySegmentName="seg_0" id="A8ED99FC-BAC4-51A4-3C75-54452D0334FC">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-10 00:42:12 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>05F946ED-E93D-33E5-0934-A50494AA34D3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>62B733B8-9F77-2068-510B-14619CE85D7E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="PONTUACAO_VL" id="FF3F162A-303E-2703-150A-B3994C338C75">
+<createdBy>vinib</createdBy>
+<createdTime>2024-05-12 18:52:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pontuação atribuida ao filme pelo sócio da vídeo-locadora através de avaliação]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

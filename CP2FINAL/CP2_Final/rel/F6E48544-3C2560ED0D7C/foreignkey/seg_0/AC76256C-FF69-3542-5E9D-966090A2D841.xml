@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC76256C-FF69-3542-5E9D-966090A2D841" containerWithKeyObject="8E6F0063-3F76-53FA-F7C1-FAC6F802B80E" localFKIndex="90C02177-F12C-5399-1B75-3B641E47E3F8" name="Avalia_Socio_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>A8ED99FC-BAC4-51A4-3C75-54452D0334FC</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<referredTableLongName>Socio</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>75C8B9C9-3814-E8B5-AFF7-C1A9B5B11A94</referredTableID>
+<keyObject>5112E207-6B00-0E68-05B4-EB0CBA58C9E4</keyObject>
+<referredKeyID>5112E207-6B00-0E68-05B4-EB0CBA58C9E4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOCIO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CP2_Final" id="20CE8C3F-7C6F-093E-3286-780CC2DFB2A5" version="3.5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:04:31 UTC</createdTime>
+<ownerDesignName>CP2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>20CE8C3F-7C6F-093E-3286-780CC2DFB2A5</designId>
+</OSDM_Design>

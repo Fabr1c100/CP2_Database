@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="05F946ED-E93D-33E5-0934-A50494AA34D3" name="Socio">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:05:30 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SOCIO_ID" id="3DC1A6B9-B725-E53E-BA02-D8EA6F9560EB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:08:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade sócio]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOCIO_NM" id="B710B042-726E-993F-94D3-DD2D9C222EE3">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:09:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do sócio cadastrado]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CADASTRO_DT" id="1852F00F-6C78-9B3A-62A9-20809BBCECAB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:10:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do sócio em sistema]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDADE_NR" id="68AF0B60-17D4-035E-5004-3288A471020E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:18:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idade do sócio cadastrado em anos]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CPF_NR" id="B18782FA-B0A0-1CED-8CB3-68664AF17094">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:18:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CPF do sócio cadastrado, sem caracteres especiais, apenas números]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENDERECO_NM" id="7B074920-07D8-6216-B09D-FD2A8A98F4E4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:19:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Endereço de residência do sócio cadastrado, composto por Logradouro, Número, Bairro, Cidade, UF e CEP]]></commentInRDBMS>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F817783B-FD62-5456-4148-339ED5980A81" name="Socio PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:09:37 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3DC1A6B9-B725-E53E-BA02-D8EA6F9560EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

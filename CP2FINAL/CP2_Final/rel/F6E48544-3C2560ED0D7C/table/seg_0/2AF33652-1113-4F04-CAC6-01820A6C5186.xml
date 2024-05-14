@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AF33652-1113-4F04-CAC6-01820A6C5186" name="Atua">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FILME_ID" id="97E7B61E-F6A4-D8F8-B1CE-49B0240B547F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E3EF1A5-5355-3809-86D5-FFCAA70AEC44" referredColumn="AB0482EF-C035-C6FE-87EF-5E3B6F69AAFD"/>
+</associations>
+</Column>
+<Column name="ARTISTA_ID" id="98821686-DC95-9CBA-4889-C63BE17BEB78">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4993AC56-8EC5-8EF0-14D9-78053730BFD5" referredColumn="CC969DBF-4C1B-F80B-0774-67A68B5D7477"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7ACC06A-8E82-723D-AA5C-CFB0972DDE1A" name="Atua_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97E7B61E-F6A4-D8F8-B1CE-49B0240B547F"/>
+<colUsage columnID="98821686-DC95-9CBA-4889-C63BE17BEB78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="962A2E1B-0861-9ADF-2E2F-3C40FA0055BA" name="Atua_Filme_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>57165EA6-8457-01A3-B5CB-114C73CB54FE</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97E7B61E-F6A4-D8F8-B1CE-49B0240B547F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5155F776-104D-5BAE-D4DE-470FABBDCABC" name="Atua_Artista_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>57165EA6-8457-01A3-B5CB-114C73CB54FE</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98821686-DC95-9CBA-4889-C63BE17BEB78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27086817-EA5A-EFEB-78ED-F72A7721023B" name="Genero">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>EBF1DFA9-6787-D232-529D-1CA1D643DC9B</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GENERO_ID" id="B8776C69-6037-9204-4A33-D1F085C3475F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade genero]]></commentInRDBMS>
+<generatorID>75AB709F-9470-52A7-D04F-03DB72ACEFE3</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO_NM" id="728AAF8B-3726-15EB-7FB3-5F091BE57361">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da classificação de genero cadastrada]]></commentInRDBMS>
+<generatorID>D3E7FEBE-7602-2F1A-10B9-8C5C57CAE289</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1F085FAD-10F8-9556-F7AE-E24F5C80B1D1" name="Genero_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>EE9D9CB9-5237-EAC1-368F-CAEB9572CF25</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8776C69-6037-9204-4A33-D1F085C3475F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

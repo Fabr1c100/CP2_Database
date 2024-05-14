@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Aluga" directorySegmentName="seg_0" id="D44AC31E-7D59-E6D5-CAA2-07255AE543FE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-09 23:33:14 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>05F946ED-E93D-33E5-0934-A50494AA34D3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CA194DBE-CA57-34F9-03E7-6E19F162EBD0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="RETIRADA_DT" id="28CF35FE-3394-67D7-9596-E15EAC267F16">
+<createdBy>vinib</createdBy>
+<createdTime>2024-05-12 18:35:30 UTC</createdTime>
+<comment><![CDATA[Data em que foi retirado o exemplar para aluguel]]></comment>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="ALUGUEL_NR" id="21C53801-BB9B-6346-F9D8-3E3BC51E502F">
+<createdBy>vinib</createdBy>
+<createdTime>2024-05-12 18:36:13 UTC</createdTime>
+<comment><![CDATA[Valor cobrado pelo aluguel (em reais) do exemplar, que leva em considearção data de retirada e data de devolução]]></comment>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</attribute>
+<attribute name="DEVOLUCAO_DT" id="D68C9BF1-1626-E858-3BA2-6A7268E8CFDB">
+<createdBy>vinib</createdBy>
+<createdTime>2024-05-12 18:39:17 UTC</createdTime>
+<comment><![CDATA[Data em que foi devolvido o exemplar alugado]]></comment>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<engineerTo>
+<item key="F6E48544-C20A-2E23-E2B3-3C2560ED0D7C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

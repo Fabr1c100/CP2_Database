@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75C8B9C9-3814-E8B5-AFF7-C1A9B5B11A94" name="Socio">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>05F946ED-E93D-33E5-0934-A50494AA34D3</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIO_ID" id="A86F6156-978D-29EE-6DFC-8140D9733988">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade sócio]]></commentInRDBMS>
+<generatorID>3DC1A6B9-B725-E53E-BA02-D8EA6F9560EB</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOCIO_NM" id="4367FC7D-A756-2809-2C67-D5F4CF0FB949">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do sócio cadastrado]]></commentInRDBMS>
+<generatorID>B710B042-726E-993F-94D3-DD2D9C222EE3</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CADASTRO_DT" id="7A8896D3-281F-01AA-776C-F626505FB81A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de cadastro do sócio em sistema]]></commentInRDBMS>
+<generatorID>1852F00F-6C78-9B3A-62A9-20809BBCECAB</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDADE_NR" id="01652522-0EDC-149E-2B31-6340D9307982">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idade do sócio cadastrado em anos]]></commentInRDBMS>
+<generatorID>68AF0B60-17D4-035E-5004-3288A471020E</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF_NR" id="0397BF20-5312-B171-F7D3-E9B1A54E0F02">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CPF do sócio cadastrado, sem caracteres especiais, apenas números]]></commentInRDBMS>
+<generatorID>B18782FA-B0A0-1CED-8CB3-68664AF17094</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENDERECO_NM" id="CF20DD41-775B-349D-DACA-7B34085B0228">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Endereço de residência do sócio cadastrado, composto por Logradouro, Número, Bairro, Cidade, UF e CEP]]></commentInRDBMS>
+<generatorID>7B074920-07D8-6216-B09D-FD2A8A98F4E4</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5112E207-6B00-0E68-05B4-EB0CBA58C9E4" name="Socio_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>F817783B-FD62-5456-4148-339ED5980A81</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A86F6156-978D-29EE-6DFC-8140D9733988"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

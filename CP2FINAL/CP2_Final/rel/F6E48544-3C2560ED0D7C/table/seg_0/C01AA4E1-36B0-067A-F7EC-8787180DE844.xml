@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C01AA4E1-36B0-067A-F7EC-8787180DE844" name="Aluga">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIO_ID" id="2A859FB2-C977-7139-72B9-64934BCB47D3">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A27E73F1-158F-9B23-EA3F-EB7EEFDAD68A" referredColumn="A86F6156-978D-29EE-6DFC-8140D9733988"/>
+</associations>
+</Column>
+<Column name="EXEMPLAR_ID" id="79110B41-9E17-4836-1A0B-5E6374D717EE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA1C3A8E-4458-F222-D529-5F4E9A25A64D" referredColumn="67EE70E1-74D8-C74F-E40B-C392D1A34BE4"/>
+</associations>
+</Column>
+<Column name="RETIRADA_DT" id="0CEC1D54-2BCA-CC9D-F70D-353D8E9C356D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<comment><![CDATA[Data em que foi retirado o exemplar para aluguel]]></comment>
+<generatorID>28CF35FE-3394-67D7-9596-E15EAC267F16</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="ALUGUEL_NR" id="D97863E5-A290-8C02-52D8-9EE299EC510C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<comment><![CDATA[Valor cobrado pelo aluguel (em reais) do exemplar, que leva em considearção data de retirada e data de devolução]]></comment>
+<generatorID>21C53801-BB9B-6346-F9D8-3E3BC51E502F</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="DEVOLUCAO_DT" id="9236F5DB-1D31-94C5-CE74-BD198FC9A08A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<comment><![CDATA[Data em que foi devolvido o exemplar alugado]]></comment>
+<generatorID>D68C9BF1-1626-E858-3BA2-6A7268E8CFDB</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84CD4FF9-F434-46A3-08E6-20D5F983FB66" name="Aluga_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A859FB2-C977-7139-72B9-64934BCB47D3"/>
+<colUsage columnID="79110B41-9E17-4836-1A0B-5E6374D717EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CAEC787-22CB-8713-44DD-F23D1415A662" name="Aluga_Socio_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>D44AC31E-7D59-E6D5-CAA2-07255AE543FE</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A859FB2-C977-7139-72B9-64934BCB47D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7650A219-2556-9A18-EA0E-E11C388CE937" name="Aluga_Exemplar_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>D44AC31E-7D59-E6D5-CAA2-07255AE543FE</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79110B41-9E17-4836-1A0B-5E6374D717EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

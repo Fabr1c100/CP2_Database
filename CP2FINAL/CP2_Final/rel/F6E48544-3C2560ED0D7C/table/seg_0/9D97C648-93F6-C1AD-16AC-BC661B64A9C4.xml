@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D97C648-93F6-C1AD-16AC-BC661B64A9C4" name="Exemplar">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>CA194DBE-CA57-34F9-03E7-6E19F162EBD0</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EXEMPLAR_ID" id="67EE70E1-74D8-C74F-E40B-C392D1A34BE4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade exemplar]]></commentInRDBMS>
+<generatorID>DB5B22CF-A6A0-2BD0-5EBA-3AACD9DF9CF5</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISPONIBILIDADE_ST" id="EFDDB9AD-3070-5F03-95A4-35A4DB3E3C18">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para identificar se o exemplar cadastrado esta disponível para aluguel]]></commentInRDBMS>
+<generatorID>3AD93472-F1AA-536D-9DB1-A9198628B211</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXEMPLAR_ID1" id="7AA34D0F-26B9-F7F2-B152-07D254DE2022">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>EE73DD2E-DA77-C175-7318-E4B1D1EEBACF</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_EXEMPLAR" id="CC281A5C-DBBF-D463-AE43-6E4940B52613">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<constraintName>CH_INH_Exemplar</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<listOfValues>
+<valueDef value="BLUERAY" description="entity BLUERAY"/>
+<valueDef value="DVD" description="entity DVD"/>
+</listOfValues>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C932B3B-70A7-EB5D-FB92-885BC84999C4" name="Exemplar_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>2E1C78A2-396A-4485-D4F3-E51B43F47D5B</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67EE70E1-74D8-C74F-E40B-C392D1A34BE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="476F007E-E709-9E1C-52A4-881F59D53280" name="Exemplar_Filme_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>86B1BAF1-ACB1-1123-F5C9-388F54EE1552</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

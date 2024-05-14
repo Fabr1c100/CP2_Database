@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F37BCFD-245E-646F-47FE-201FEC525B4B" name="Artista">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>9E3FE43D-26E8-322E-C3E9-A4CAEC6CD306</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARTISTA_ID" id="CC969DBF-4C1B-F80B-0774-67A68B5D7477">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador principal da entidade artista]]></commentInRDBMS>
+<generatorID>3D3D44C8-CB20-C692-AA00-0217EC9EDB30</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARTISTA_NM" id="3F761FE1-9EE2-7243-98F6-1CC620CBD82F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do artista cadastrado]]></commentInRDBMS>
+<generatorID>63D6AC5C-AC7D-F75A-7D1B-E14E2F76A855</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AE647D0-4EBB-09F1-1D27-9CF47CD09D1A" name="Artista_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>900A53EB-2D87-6087-C3A9-8F7DBF505F37</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC969DBF-4C1B-F80B-0774-67A68B5D7477"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACD4962A-62F3-BD19-18B6-B981220A9B3E" name="Dirige">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARTISTA_ID" id="0413F57C-C3DA-148C-543B-B0F46E769C0F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2180B0F1-7821-8C66-DDF6-CF1447B112EB" referredColumn="CC969DBF-4C1B-F80B-0774-67A68B5D7477"/>
+</associations>
+</Column>
+<Column name="FILME_ID" id="36A54E4D-A681-DC8D-C485-8CE5EDE74B67">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8CC4B0CC-1698-F3B1-EA4B-8809919613DB" referredColumn="AB0482EF-C035-C6FE-87EF-5E3B6F69AAFD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F50714DA-580A-A6E7-6002-7B958A6821D1" name="Dirige_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0413F57C-C3DA-148C-543B-B0F46E769C0F"/>
+<colUsage columnID="36A54E4D-A681-DC8D-C485-8CE5EDE74B67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DFFBF38-D5E9-0E48-F98A-106CB7781EF9" name="Dirige_Artista_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>054BEEC0-9495-A125-3581-9E08B09F54C9</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0413F57C-C3DA-148C-543B-B0F46E769C0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC1B7DED-8270-6FD0-A128-DD5DC22F0AF4" name="Dirige_Filme_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>054BEEC0-9495-A125-3581-9E08B09F54C9</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36A54E4D-A681-DC8D-C485-8CE5EDE74B67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

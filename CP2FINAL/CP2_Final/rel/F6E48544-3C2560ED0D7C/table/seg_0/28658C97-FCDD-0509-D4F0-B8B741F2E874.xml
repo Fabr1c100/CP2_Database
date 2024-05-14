@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28658C97-FCDD-0509-D4F0-B8B741F2E874" name="Classifica">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FILME_ID" id="C8939DF7-FFA0-ECEE-7F80-9BF92824A82F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="609ECA57-05B0-45E4-25CE-B69A89EAEB67" referredColumn="AB0482EF-C035-C6FE-87EF-5E3B6F69AAFD"/>
+</associations>
+</Column>
+<Column name="GENERO_ID" id="68D4415C-8E33-A449-EFEA-80FD2F767EFB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84F9CF58-CBC1-B202-2000-4E7866D49F1F" referredColumn="B8776C69-6037-9204-4A33-D1F085C3475F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67DE5E44-FB46-6A4E-0DF3-7AEDD31B99A7" name="Classifica_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8939DF7-FFA0-ECEE-7F80-9BF92824A82F"/>
+<colUsage columnID="68D4415C-8E33-A449-EFEA-80FD2F767EFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDAC8833-E6AC-9819-F5FF-BE99140E9D57" name="Classifica_Filme_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>0F965E0A-C612-19BB-2613-F916994C598D</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8939DF7-FFA0-ECEE-7F80-9BF92824A82F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1765C580-6309-64B0-5542-BBEAD2037905" name="Classifica_Genero_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>0F965E0A-C612-19BB-2613-F916994C598D</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68D4415C-8E33-A449-EFEA-80FD2F767EFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

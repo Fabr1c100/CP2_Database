@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E6F0063-3F76-53FA-F7C1-FAC6F802B80E" name="Avalia">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIO_ID" id="5FC18F2A-32B2-4B2B-9DB9-AB48BD1B6F2D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC76256C-FF69-3542-5E9D-966090A2D841" referredColumn="A86F6156-978D-29EE-6DFC-8140D9733988"/>
+</associations>
+</Column>
+<Column name="FILME_ID" id="89FA5952-7964-D898-F064-BA9FEB0152EB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1431C8F6-75E1-CB26-29F5-8DA4E58C3D63" referredColumn="AB0482EF-C035-C6FE-87EF-5E3B6F69AAFD"/>
+</associations>
+</Column>
+<Column name="PONTUACAO_VL" id="93BCD04F-899F-40A5-5FF5-D10979FD3281">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pontuação atribuida ao filme pelo sócio da vídeo-locadora através de avaliação]]></commentInRDBMS>
+<generatorID>FF3F162A-303E-2703-150A-B3994C338C75</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76D66270-4A83-6BD4-C6BF-D1F9192ABBED" name="Avalia_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FC18F2A-32B2-4B2B-9DB9-AB48BD1B6F2D"/>
+<colUsage columnID="89FA5952-7964-D898-F064-BA9FEB0152EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C02177-F12C-5399-1B75-3B641E47E3F8" name="Avalia_Socio_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>A8ED99FC-BAC4-51A4-3C75-54452D0334FC</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FC18F2A-32B2-4B2B-9DB9-AB48BD1B6F2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58191297-6475-F319-9C0E-11E4E0936CEF" name="Avalia_Filme_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2024-05-14 00:01:54 UTC</createdTime>
+<generatorID>A8ED99FC-BAC4-51A4-3C75-54452D0334FC</generatorID>
+<ownerDesignName>CP2_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89FA5952-7964-D898-F064-BA9FEB0152EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
